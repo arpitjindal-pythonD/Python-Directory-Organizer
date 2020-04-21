@@ -12,7 +12,6 @@ def pickDirectory(value):
             if suffix == value:
                 return category
     return 'MISC'
-print(pickDirectory('.mp3'))
 def organizeDirectory():
     for item in os.scandir():
         if item.is_dir():
